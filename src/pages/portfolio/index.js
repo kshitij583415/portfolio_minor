@@ -44,23 +44,76 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">System Thinking</h3>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <div>
-              <p>
-                - **Identified Interdependencies**: Analyzed how frontend components in React and backend services in Spring Boot interacted to ensure seamless data flow and user interaction.
+  <Col lg="5">
+    <h3 className="color_sec py-4">System Thinking Approach</h3>
+  </Col>
+  <Col lg="7" className="d-flex align-items-center">
+    <div>
+      <p>
+        - **Identify Goals and Objectives**:
+        <ul>
+          <li>Primary Goal: To provide quality education through an interactive and resourceful web app.</li>
+          <li>Sub-Goals:</li>
+          <ul>
+            <li>Enable users to access and enroll in courses.</li>
+            <li>Allow mentors to create and manage courses.</li>
+            <li>Provide a repository of books as learning resources.</li>
+          </ul>
+        </ul>
 
-                - **Optimized Feedback Loops**: Implemented efficient feedback mechanisms between frontend UI updates and backend data processing to enhance system responsiveness.
+        - **Understand the Interactions**:
+        <ul>
+          <li>User Interactions:</li>
+          <ul>
+            <li>Register, login, and browse courses.</li>
+            <li>Enroll in courses, access course materials, and interact with mentors.</li>
+          </ul>
+          <li>Mentor Interactions:</li>
+          <ul>
+            <li>Create, update, and manage courses.</li>
+            <li>Track student progress and provide guidance.</li>
+          </ul>
+          <li>Admin Interactions:</li>
+          <ul>
+            <li>Manage user roles (promote users to mentors).</li>
+            <li>Create and manage books in the repository.</li>
+          </ul>
+        </ul>
 
-                - **Anticipated Time Delays**: Addressed potential delays in data retrieval and processing by optimizing API calls and database queries, ensuring real-time data availability.
+        - **Analyze the Flow of Information**:
+        <ul>
+          <li>Frontend (React):</li>
+          <ul>
+            <li>UI components for user registration, login, course browsing, and enrollment.</li>
+            <li>Mentor-specific UI for course creation and management.</li>
+            <li>Admin-specific UI for book management.</li>
+          </ul>
+          <li>Backend:</li>
+          <ul>
+            <li>User: Authentication, role management, course enrollment tracking.</li>
+            <li>Mentor: Course creation, course content management, student tracking.</li>
+            <li>Courses: CRUD operations (Create, Read, Update, Delete), enrollment management.</li>
+            <li>Books: CRUD operations, linking to courses.</li>
+          </ul>
+        </ul>
 
-                - **Integrated Scalability**: Designed scalable architecture updates based on patterns and trends in user interactions and data usage, supporting future growth and performance improvements.
-              </p>
-            </div>
-          </Col>
-        </Row>
+        - **Feedback Loops and Iterations**:
+        <ul>
+          <li>Student Feedback: Collect feedback from users on courses and mentors, which can be used to improve course quality.</li>
+          <li>Mentor Feedback: Mentors can provide feedback on the platform and suggest improvements.</li>
+          <li>Admin Monitoring: Admins can monitor platform usage and make decisions on adding new features or resources based on data.</li>
+        </ul>
+
+        - **Dependencies and Interdependencies**:
+        <ul>
+          <li>User and Mentor Interdependence: A user's role can evolve into a mentor, creating a pathway for user growth.</li>
+          <li>Courses and Books Interdependence: Courses can recommend books, and books can enhance course content.</li>
+        </ul>
+      </p>
+    </div>
+  </Col>
+</Row>
+
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Problem Statement</h3>
